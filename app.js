@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect to mongodb & listen for requests
-const dbURI = "mongodb+srv://saad:saad123@cluster0.hxdannt.mongodb.net/saadblog?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://<username>:<password>@cluster0.hxdannt.mongodb.net/saadblog?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result => {
